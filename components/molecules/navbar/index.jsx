@@ -355,7 +355,7 @@ export default function Navbar() {
                       </div>
                     </div>
                     <ul className="f-m-m">
-                      <Link className="cursor-pointer">
+                      <div className="cursor-pointer">
                         <li className="text-gray-800 pt-10">
                           <div className="flex items-center">
                             <div className="w-6 h-6 md:w-8 md:h-8 text-indigo-700">
@@ -399,8 +399,8 @@ export default function Navbar() {
                             </p>
                           </div>
                         </li>
-                      </Link>
-                      <Link className="cursor-pointer">
+                      </div>
+                      <div className="cursor-pointer">
                         <li className="text-gray-800 pt-8">
                           <div className="flex items-center justify-between">
                             <div className="flex items-center">
@@ -425,8 +425,8 @@ export default function Navbar() {
                             </div>
                           </div>
                         </li>
-                      </Link>
-                      <Link className="cursor-pointer">
+                      </div>
+                      <div className="cursor-pointer">
                         <li className="text-gray-800 pt-8">
                           <div className="flex items-center">
                             <div className="w-6 h-6 md:w-8 md:h-8 text-gray-800">
@@ -450,7 +450,7 @@ export default function Navbar() {
                             </p>
                           </div>
                         </li>
-                      </Link>
+                      </div>
                       <li className="text-gray-800 pt-8 cursor-pointer">
                         <div className="flex items-center justify-between">
                           <div className="flex items-center">

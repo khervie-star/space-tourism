@@ -1,4 +1,3 @@
-import Navbar from '../components/molecules/navbar'
 import '../styles/globals.css'
 
 function MyApp({ Component, pageProps }) {

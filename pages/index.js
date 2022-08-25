@@ -12,7 +12,7 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head> */}
 
-      <div className="bg-[url('../public/static/assets/home/background-home-desktop.jpg')] bg-fixed bg-center bg-no-repeat bg-cover m-0">
+      <div className="bg-[url('/static/assets/home/background-home-desktop.jpg')] bg-fixed bg-center bg-no-repeat bg-cover m-0">
         <Navbar />
         <div className='p-32'>
           {/* <Navbar /> */}

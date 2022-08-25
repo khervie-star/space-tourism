@@ -204,41 +204,29 @@ export default function Navbar() {
               </div>
               <div className="flex bg-white/[0.04] backdrop-blur-md  ">
                 <div className="hidden xl:flex md:mx-6 xl:mx-24">
-                  <Link
-                    href="/"
-                    className="flex px-5 items-center py-6 leading-5 text-white uppercase font-normal text-base  border-b-0 border-b-white/[.5041]  hover:border-b-[3px] hover:border-b-white/[.5041]  transition   hover:transition-all hover:duration-[300ms] ease-in-out"
-                  >
-                    <>
+                  <Link href="/">
+                    <span className="flex px-5 items-center py-6 leading-5 text-white uppercase font-normal text-base  border-b-0 border-b-white/[.5041]  hover:border-b-[3px] hover:border-b-white/[.5041]  transition   hover:transition-all hover:duration-[300ms] ease-in-out">
                       <span className="mr-2 font-bold">00</span>
                       Home
-                    </>
+                    </span>
                   </Link>
-                  <Link
-                    href="/destination"
-                    className="flex px-5 items-center py-6 leading-5 text-white uppercase font-normal text-base  border-b-0 border-b-white/[.5041]  hover:border-b-[3px] hover:border-b-white/[.5041]  transition   hover:transition-all hover:duration-[300ms] ease-in-out"
-                  >
-                    <>
+                  <Link href="/destination">
+                    <span className="flex px-5 items-center py-6 leading-5 text-white uppercase font-normal text-base  border-b-0 border-b-white/[.5041]  hover:border-b-[3px] hover:border-b-white/[.5041]  transition   hover:transition-all hover:duration-[300ms] ease-in-out">
                       <span className="mr-2 font-bold">01</span>
                       Destination
-                    </>
+                    </span>
                   </Link>
-                  <Link
-                    href="/crew"
-                    className="flex px-5 items-center py-6 leading-5 text-white uppercase font-normal text-base  border-b-0 border-b-white/[.5041]  hover:border-b-[3px] hover:border-b-white/[.5041]  transition   hover:transition-all hover:duration-[300ms] ease-in-out"
-                  >
-                    <>
+                  <Link href="/crew">
+                    <span className="flex px-5 items-center py-6 leading-5 text-white uppercase font-normal text-base  border-b-0 border-b-white/[.5041]  hover:border-b-[3px] hover:border-b-white/[.5041]  transition   hover:transition-all hover:duration-[300ms] ease-in-out">
                       <span className="mr-2 font-bold">02</span>
                       Crew
-                    </>
+                    </span>
                   </Link>
-                  <Link
-                    href="/technology"
-                    className="flex px-5 items-center py-6 leading-5 text-white uppercase font-normal text-base  border-b-0 border-b-white/[.5041]  hover:border-b-[3px] hover:border-b-white/[.5041]  transition   hover:transition-all hover:duration-[300ms] ease-in-out"
-                  >
-                    <>
+                  <Link href="/technology">
+                    <span className="flex px-5 items-center py-6 leading-5 text-white uppercase font-normal text-base  border-b-0 border-b-white/[.5041]  hover:border-b-[3px] hover:border-b-white/[.5041]  transition   hover:transition-all hover:duration-[300ms] ease-in-out">
                       <span className="mr-2 font-bold">03</span>
                       Technology
-                    </>
+                    </span>
                   </Link>
                 </div>
               </div>

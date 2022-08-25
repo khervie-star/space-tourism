@@ -152,7 +152,7 @@ export default function Navbar() {
                       </li>
                     </ul>
                     <svg
-                      onclick="MenuHandler(this,true)"
+                      onClick="MenuHandler(this,true)"
                       aria-haspopup="true"
                       aria-label="Main Menu"
                       xmlns="http://www.w3.org/2000/svg"
@@ -173,7 +173,7 @@ export default function Navbar() {
                   </div>
                   <div
                     className="hidden close-m-menu text-gray-700"
-                    onclick="MenuHandler(this,false)"
+                    onClick="MenuHandler(this,false)"
                   >
                     <svg
                       aria-label="Close"

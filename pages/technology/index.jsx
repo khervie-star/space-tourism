@@ -87,7 +87,7 @@ export default function Home() {
             className="mySwiper"
           >
             {crews.map((crew, i) => (
-              <SwiperSlide>
+              <SwiperSlide key={i}>
                 <div className="flex flex-row justify-evenly w-full">
                   <div className="basis-1/2 flex flex-row flex-wrap items-center">
                     <div className="crewPane">

@@ -83,6 +83,7 @@ export default function Home() {
                           : `text-center py-4 mx-4 cursor-pointer  font-normal text-[16px] leading-[19.2px] tracking-[2.7px] text-[#D0D6F9] uppercase`
                       }
                       onClick={() => SetActiveTab(i)}
+                      key={i}
                     >
                       {tab.tabName}
                     </li>

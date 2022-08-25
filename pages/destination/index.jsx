@@ -58,7 +58,7 @@ export default function Destination() {
       </Head> */}
 
       {/* <div className="bg-[url('/static/assets/destination/background-destination-desktop.jpg')] bg-fixed bg-center bg-no-repeat bg-cover m-0"> */}
-      <div className="bg-[url('/static/assets/destination/background-destination-mobile.jpg')] md:bg-[url('/static/assets/destination/background-destination-tablet.jpg')]  lg:bg-[url('/static/assets/destination/background-destination-desktop.jpg')] bg-fixed bg-center bg-no-repeat bg-cover m-0 w-full h-screen">
+      <div className="bg-[url('/static/assets/destination/background-destination-mobile.jpg')] md:bg-[url('/static/assets/destination/background-destination-tablet.jpg')]  lg:bg-[url('/static/assets/destination/background-destination-desktop.jpg')] bg-fixed bg-center bg-no-repeat bg-cover m-0 w-full h-full">
         <Navbar />
         <div className="lg:p-32  p-8 pt-[88px] text-center lg:text-left">
           <p className="page-text font-normal text-[16px] lg:text-[28px] text-white lg:leading-[33.6px] leading-[19.2px] lg:tracking-[4.72px] tracking-[2.7px] uppercase">

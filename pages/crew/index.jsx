@@ -70,12 +70,13 @@ export default function Crew() {
         <link rel="icon" href="/favicon.ico" />
       </Head> */}
 
-      <div className="bg-[url('/static/assets/crew/background-crew-desktop.jpg')] bg-fixed bg-center bg-no-repeat bg-cover m-0">
+      {/* <div className="bg-[url('/static/assets/crew/background-crew-desktop.jpg')] bg-fixed bg-center bg-no-repeat bg-cover m-0"> */}
+      <div className="bg-[url('/static/assets/crew/background-crew-mobile.jpg')] md:bg-[url('/static/assets/crew/background-crew-tablet.jpg')]  lg:bg-[url('/static/assets/crew/background-crew-desktop.jpg')] bg-fixed bg-center bg-no-repeat bg-cover m-0 w-full h-full">
         <Navbar />
-        <div className="p-32 py-8">
-          <p className="page-text font-normal text-[28px] text-white leading-[33.6px] tracking-[4.72px] uppercase">
+        <div className="lg:p-32  p-8 pt-[88px] text-center lg:text-left">
+          <p className="page-text font-normal text-[16px] lg:text-[28px] text-white lg:leading-[33.6px] leading-[19.2px] lg:tracking-[4.72px] tracking-[2.7px] uppercase">
             {" "}
-            <span className="mr-6 font-bold text-white/25">02</span>
+            <span className="mr-6 mb-8 font-bold text-white/25">02</span>
             Meet your crew
           </p>
           <Swiper
@@ -93,21 +94,21 @@ export default function Crew() {
           >
             {crews.map((crew, i) => (
               <SwiperSlide key={i}>
-                <div className="flex flex-row justify-evenly w-full">
-                  <div className="basis-1/2 flex flex-row flex-wrap items-center">
+                <div className="flex lg:flex-row flex-col-reverse justify-evenly w-full">
+                  <div className="basis-1/2 flex row no-wrap justify-around items-end explore-button mt-8 mb-[26px]">
                     <div className="crewPane">
-                      <p className="font-normal leading[36.67px] text-white/[.5042] text-[32px] uppercase font-[Bellefair]">
+                      <p className="font-normal leading-[18.34px] lg:leading[36.67px] text-white/[.5042] text-[16px] lg:text-[32px] uppercase font-[Bellefair]">
                         {crew.role}
                       </p>
-                      <p className="font-normal leading[64.18px] text-white text-[56px] uppercase font-[Bellefair]">
+                      <p className="font-normal leading-[27.5px] lg:leading[64.18px] text-white text-[24px] lg:text-[56px] uppercase font-[Bellefair]">
                         {crew.crewName}
                       </p>
-                      <p className="font-normal text-[18px] leading-[32px] tracking-[4.72px] text-[#D0D6F9]">
+                      <p className="font-normal text-[18px] leading-[32px] tracking-[4.72px] text-[#D0D6F9] mt-4">
                         {crew.content}
                       </p>
                     </div>
                   </div>
-                  <div className="basis-1/2 flex row no-wrap justify-around items-end explore-button ">
+                  <div className="basis-1/2 flex row no-wrap justify-around items-end explore-button mt-8 mb-[26px]">
                     <img src={crew.image} className="w-[453.44px] h-full" />
                   </div>
                 </div>

@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import Link from "next/link"
+import Link from "next/link";
 export default function Navbar() {
   const [show, setShow] = useState(null);
   const [profile, setProfile] = useState(false);
@@ -208,29 +208,37 @@ export default function Navbar() {
                     href="/"
                     className="flex px-5 items-center py-6 leading-5 text-white uppercase font-normal text-base  border-b-0 border-b-white/[.5041]  hover:border-b-[3px] hover:border-b-white/[.5041]  transition   hover:transition-all hover:duration-[300ms] ease-in-out"
                   >
-                    <span className="mr-2 font-bold">00</span>
-                    Home
+                    <>
+                      <span className="mr-2 font-bold">00</span>
+                      Home
+                    </>
                   </Link>
                   <Link
                     href="/destination"
                     className="flex px-5 items-center py-6 leading-5 text-white uppercase font-normal text-base  border-b-0 border-b-white/[.5041]  hover:border-b-[3px] hover:border-b-white/[.5041]  transition   hover:transition-all hover:duration-[300ms] ease-in-out"
                   >
-                    <span className="mr-2 font-bold">01</span>
-                    Destination
+                    <>
+                      <span className="mr-2 font-bold">01</span>
+                      Destination
+                    </>
                   </Link>
                   <Link
                     href="/crew"
                     className="flex px-5 items-center py-6 leading-5 text-white uppercase font-normal text-base  border-b-0 border-b-white/[.5041]  hover:border-b-[3px] hover:border-b-white/[.5041]  transition   hover:transition-all hover:duration-[300ms] ease-in-out"
                   >
-                    <span className="mr-2 font-bold">02</span>
-                    Crew
+                    <>
+                      <span className="mr-2 font-bold">02</span>
+                      Crew
+                    </>
                   </Link>
                   <Link
                     href="/technology"
                     className="flex px-5 items-center py-6 leading-5 text-white uppercase font-normal text-base  border-b-0 border-b-white/[.5041]  hover:border-b-[3px] hover:border-b-white/[.5041]  transition   hover:transition-all hover:duration-[300ms] ease-in-out"
                   >
-                    <span className="mr-2 font-bold">03</span>
-                    Technology
+                    <>
+                      <span className="mr-2 font-bold">03</span>
+                      Technology
+                    </>
                   </Link>
                 </div>
               </div>

@@ -7,7 +7,7 @@ export default function Navbar() {
   const [deliverables, setDeliverables] = useState(false);
   return (
     <>
-      <div className="bg-transparent h-full w-full">
+      <div className="bg-transparent w-full">
         {/* Code block starts */}
         <nav className="bg-transparent xl:block hidden py-8">
           <div className="mx-auto py-2 xl:py-0">
@@ -234,22 +234,9 @@ export default function Navbar() {
           </div>
         </nav>
         <nav>
-          <div className="py-4 px-6 w-full flex xl:hidden justify-between items-center bg-white fixed top-0 z-40">
+          <div className="p-6 w-full flex xl:hidden justify-between items-center bg-transparent fixed top-0 z-40">
             <div className="w-24">
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                width={43}
-                height={44}
-                viewBox="0 0 43 44"
-                fill="none"
-              >
-                <path
-                  fillRule="evenodd"
-                  clipRule="evenodd"
-                  d="M37.8735 0C36.1688 0 34.7818 1.37956 34.7818 3.0751C34.7818 4.77063 36.1688 6.15019 37.8735 6.15019C39.5782 6.15019 40.9653 4.77063 40.9653 3.0751C40.9653 1.37956 39.5782 0 37.8735 0ZM37.8735 4.61264C37.021 4.61264 36.3277 3.92305 36.3277 3.0751C36.3277 2.22714 37.021 1.53755 37.8735 1.53755C38.7261 1.53755 39.4194 2.22714 39.4194 3.0751C39.4194 3.92305 38.7261 4.61264 37.8735 4.61264ZM26.6663 1.0513C26.1828 1.0513 25.7909 1.44107 25.7909 1.92193C25.7909 2.4028 26.1828 2.79238 26.6663 2.79238C27.1497 2.79238 27.5416 2.40261 27.5416 1.92193C27.5416 1.44107 27.1497 1.0513 26.6663 1.0513ZM43 13.4535C43 13.9342 42.6081 14.324 42.1247 14.324C41.6412 14.324 41.2493 13.9342 41.2493 13.4535C41.2493 12.9727 41.6412 12.5829 42.1247 12.5829C42.6081 12.5829 43 12.9729 43 13.4535ZM18.1654 2.59019L35.1698 12.4044C35.4079 12.5418 35.5548 12.7951 35.5548 13.0692V33.0573C35.5548 33.3273 35.4123 33.5772 35.1803 33.7161L18.1758 43.8901C18.0533 43.9633 17.915 44 17.7774 44C17.6398 44 17.5016 43.9633 17.3789 43.8901L0.374484 33.7161C0.142219 33.5772 0 33.3271 0 33.0573V13.0692C0 12.7951 0.146857 12.5418 0.384919 12.4044L17.3894 2.59019C17.6296 2.45124 17.9254 2.45124 18.1654 2.59019ZM17.7774 4.14388L33.2524 13.0751L23.0207 19.0887L18.5503 16.4735V12.3004C18.5503 11.8758 18.2042 11.5316 17.7774 11.5316C17.3505 11.5316 17.0044 11.8758 17.0044 12.3004V16.4735L11.9752 19.4158C11.7389 19.554 11.5939 19.8057 11.5939 20.0783V25.8047L1.54586 31.7102V13.5118L17.7774 4.14388ZM2.28227 33.0632L17.7774 42.3341L34.0091 32.6225V14.4162L23.961 20.322V26.4081C23.961 26.6807 23.8161 26.9325 23.5798 27.0706L18.5505 30.0125V33.826C18.5505 34.2506 18.2044 34.5948 17.7776 34.5948C17.3507 34.5948 17.0046 34.2506 17.0046 33.826V30.0125L12.2274 27.2182L2.28227 33.0632Z"
-                  fill="#667EEA"
-                />
-              </svg>
+              <img src="/static/assets/shared/logo.svg" />
             </div>
             <div className="flex items-center">
               <div
@@ -262,20 +249,12 @@ export default function Navbar() {
                 ) : (
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
-                    className="icon icon-tabler icon-tabler-menu-2"
-                    width={24}
-                    height={24}
-                    viewBox="0 0 24 24"
-                    strokeWidth="1.5"
-                    stroke="currentColor"
-                    fill="none"
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
+                    width="24"
+                    height="21"
                   >
-                    <path stroke="none" d="M0 0h24v24H0z" fill="none" />
-                    <line x1={4} y1={6} x2={20} y2={6} />
-                    <line x1={4} y1={12} x2={20} y2={12} />
-                    <line x1={4} y1={18} x2={20} y2={18} />
+                    <g fill="#D0D6F9" fillRule="evenodd">
+                      <path d="M0 0h24v3H0zM0 9h24v3H0zM0 18h24v3H0z" />
+                    </g>
                   </svg>
                 )}
               </div>
@@ -285,24 +264,37 @@ export default function Navbar() {
           <div
             className={
               show
-                ? "w-full xl:hidden h-full absolute z-40  transform  translate-x-0 "
-                : "   w-full xl:hidden h-full absolute z-40  transform -translate-x-full"
+                ? "w-full xl:hidden h-full absolute z-40 right-0 transform  translate-x-0 transition-all duration-[400ms]"
+                : " w-full xl:hidden h-full absolute z-40 right-0 transform -translate-x-full transition-all duration-[400ms]"
             }
           >
             <div
-              className="bg-gray-800 opacity-50 w-full h-full"
+              className="bg-gray-800 opacity-10 w-full h-full"
               onClick={() => setShow(!show)}
             />
-            <div className="w-64 z-40 fixed overflow-y-auto z-40 top-0 bg-white shadow h-full flex-col justify-between xl:hidden pb-4 transition duration-150 ease-in-out">
+            <div className="w-64 z-40 fixed overflow-y-auto z-40 top-0 bg-white/[0.04] backdrop-blur-md  h-full flex-col justify-between xl:hidden pb-4 transition duration-150 ease-in-out">
               <div className="px-6 h-full">
                 <div className="flex flex-col justify-between h-full w-full">
                   <div>
                     <div className="mt-6 flex w-full items-center justify-between">
                       <div className="flex items-center justify-between w-full">
                         <div>
-                          <p className="text-base md:text-2xl text-gray-800 ml-3">
-                            The North
-                          </p>
+                          <div
+                            id="menu"
+                            className="text-gray-800"
+                            onClick={() => setShow(false)}
+                          >
+                            <svg
+                              xmlns="http://www.w3.org/2000/svg"
+                              width="20"
+                              height="21"
+                            >
+                              <g fill="#D0D6F9" fillRule="evenodd">
+                                <path d="M2.575.954l16.97 16.97-2.12 2.122L.455 3.076z" />
+                                <path d="M.454 17.925L17.424.955l2.122 2.12-16.97 16.97z" />
+                              </g>
+                            </svg>
+                          </div>
                         </div>
                       </div>
                     </div>
@@ -310,9 +302,12 @@ export default function Navbar() {
                       <div className="cursor-pointer">
                         <li className="text-gray-800 pt-10">
                           <div className="flex items-center">
-                            <p className="text-indigo-700 xl:text-base text-base ml-3">
-                              Dashboard
-                            </p>
+                            <Link href="/">
+                              <span className="flex px-5 items-center leading-5 text-white uppercase font-normal text-base  border-b-0 border-b-white/[.5041]  hover:border-b-[3px] hover:border-b-white/[.5041]  transition   hover:transition-all hover:duration-[300ms] ease-in-out">
+                                <span className="mr-2 font-bold">00</span>
+                                Home
+                              </span>
+                            </Link>
                           </div>
                         </li>
                       </div>
@@ -320,9 +315,12 @@ export default function Navbar() {
                         <li className="text-gray-800 pt-8">
                           <div className="flex items-center justify-between">
                             <div className="flex items-center">
-                              <p className="text-gray-800 xl:text-base md:text-2xl text-base ml-3">
-                                Products
-                              </p>
+                              <Link href="/destination">
+                                <span className="flex px-5 items-center leading-5 text-white uppercase font-normal text-base  border-b-0 border-b-white/[.5041]  hover:border-b-[3px] hover:border-b-white/[.5041]  transition   hover:transition-all hover:duration-[300ms] ease-in-out">
+                                  <span className="mr-2 font-bold">01</span>
+                                  Destination
+                                </span>
+                              </Link>
                             </div>
                           </div>
                         </li>
@@ -330,18 +328,24 @@ export default function Navbar() {
                       <div className="cursor-pointer">
                         <li className="text-gray-800 pt-8">
                           <div className="flex items-center">
-                            <p className="text-gray-800 xl:text-base md:text-2xl text-base ml-3">
-                              Performance
-                            </p>
+                            <Link href="/crew">
+                              <span className="flex px-5 items-center leading-5 text-white uppercase font-normal text-base  border-b-0 border-b-white/[.5041]  hover:border-b-[3px] hover:border-b-white/[.5041]  transition   hover:transition-all hover:duration-[300ms] ease-in-out">
+                                <span className="mr-2 font-bold">02</span>
+                                Crew
+                              </span>
+                            </Link>
                           </div>
                         </li>
                       </div>
                       <li className="text-gray-800 pt-8 cursor-pointer">
                         <div className="flex items-center justify-between">
                           <div className="flex items-center">
-                            <p className="text-gray-800 xl:text-base md:text-2xl text-base ml-3">
-                              Deliverables
-                            </p>
+                            <Link href="/technology">
+                              <span className="flex px-5 items-center leading-5 text-white uppercase font-normal text-base  border-b-0 border-b-white/[.5041]  hover:border-b-[3px] hover:border-b-white/[.5041]  transition   hover:transition-all hover:duration-[300ms] ease-in-out">
+                                <span className="mr-2 font-bold">03</span>
+                                Technology
+                              </span>
+                            </Link>
                           </div>
                         </div>
                       </li>

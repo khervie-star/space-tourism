@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import Link from "next/link"
 export default function Navbar() {
   const [show, setShow] = useState(null);
   const [profile, setProfile] = useState(false);
@@ -203,34 +204,34 @@ export default function Navbar() {
               </div>
               <div className="flex bg-white/[0.04] backdrop-blur-md  ">
                 <div className="hidden xl:flex md:mx-6 xl:mx-24">
-                  <a
+                  <Link
                     href="/"
                     className="flex px-5 items-center py-6 leading-5 text-white uppercase font-normal text-base  border-b-0 border-b-white/[.5041]  hover:border-b-[3px] hover:border-b-white/[.5041]  transition   hover:transition-all hover:duration-[300ms] ease-in-out"
                   >
                     <span className="mr-2 font-bold">00</span>
                     Home
-                  </a>
-                  <a
+                  </Link>
+                  <Link
                     href="/destination"
                     className="flex px-5 items-center py-6 leading-5 text-white uppercase font-normal text-base  border-b-0 border-b-white/[.5041]  hover:border-b-[3px] hover:border-b-white/[.5041]  transition   hover:transition-all hover:duration-[300ms] ease-in-out"
                   >
                     <span className="mr-2 font-bold">01</span>
                     Destination
-                  </a>
-                  <a
+                  </Link>
+                  <Link
                     href="/crew"
                     className="flex px-5 items-center py-6 leading-5 text-white uppercase font-normal text-base  border-b-0 border-b-white/[.5041]  hover:border-b-[3px] hover:border-b-white/[.5041]  transition   hover:transition-all hover:duration-[300ms] ease-in-out"
                   >
                     <span className="mr-2 font-bold">02</span>
                     Crew
-                  </a>
-                  <a
+                  </Link>
+                  <Link
                     href="/technology"
                     className="flex px-5 items-center py-6 leading-5 text-white uppercase font-normal text-base  border-b-0 border-b-white/[.5041]  hover:border-b-[3px] hover:border-b-white/[.5041]  transition   hover:transition-all hover:duration-[300ms] ease-in-out"
                   >
                     <span className="mr-2 font-bold">03</span>
                     Technology
-                  </a>
+                  </Link>
                 </div>
               </div>
             </div>
@@ -346,7 +347,7 @@ export default function Navbar() {
                       </div>
                     </div>
                     <ul className="f-m-m">
-                      <a className="cursor-pointer">
+                      <Link className="cursor-pointer">
                         <li className="text-gray-800 pt-10">
                           <div className="flex items-center">
                             <div className="w-6 h-6 md:w-8 md:h-8 text-indigo-700">
@@ -390,8 +391,8 @@ export default function Navbar() {
                             </p>
                           </div>
                         </li>
-                      </a>
-                      <a className="cursor-pointer">
+                      </Link>
+                      <Link className="cursor-pointer">
                         <li className="text-gray-800 pt-8">
                           <div className="flex items-center justify-between">
                             <div className="flex items-center">
@@ -416,8 +417,8 @@ export default function Navbar() {
                             </div>
                           </div>
                         </li>
-                      </a>
-                      <a className="cursor-pointer">
+                      </Link>
+                      <Link className="cursor-pointer">
                         <li className="text-gray-800 pt-8">
                           <div className="flex items-center">
                             <div className="w-6 h-6 md:w-8 md:h-8 text-gray-800">
@@ -441,7 +442,7 @@ export default function Navbar() {
                             </p>
                           </div>
                         </li>
-                      </a>
+                      </Link>
                       <li className="text-gray-800 pt-8 cursor-pointer">
                         <div className="flex items-center justify-between">
                           <div className="flex items-center">
